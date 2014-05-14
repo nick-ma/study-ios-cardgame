@@ -9,5 +9,11 @@
 #import "Card.h"
 
 @interface PlayingCard : Card
+//这里声明public
+@property (strong, nonatomic) NSString *suit;
+@property (nonatomic) NSUInteger rank;
 
++ (NSArray *) validSuits;
++ (NSArray *) rankStrings;
++ (NSUInteger)maxRank;
 @end

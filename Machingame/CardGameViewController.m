@@ -11,6 +11,7 @@
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipLable;
 @property (nonatomic) int flipCount;
+
 @end
 
 @implementation CardGameViewController
