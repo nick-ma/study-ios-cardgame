@@ -112,8 +112,6 @@
 		01AC7C12192345DB00844AB3 /* Machingame */ = {
 			isa = PBXGroup;
 			children = (
-				01AC7C1B192345DB00844AB3 /* CardGameAppDelegate.h */,
-				01AC7C1C192345DB00844AB3 /* CardGameAppDelegate.m */,
 				01AC7C1E192345DB00844AB3 /* Main.storyboard */,
 				01AC7C21192345DB00844AB3 /* CardGameViewController.h */,
 				01AC7C22192345DB00844AB3 /* CardGameViewController.m */,
@@ -126,6 +124,8 @@
 		01AC7C13192345DB00844AB3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01AC7C1B192345DB00844AB3 /* CardGameAppDelegate.h */,
+				01AC7C1C192345DB00844AB3 /* CardGameAppDelegate.m */,
 				01AC7C14192345DB00844AB3 /* Machingame-Info.plist */,
 				01AC7C15192345DB00844AB3 /* InfoPlist.strings */,
 				01AC7C18192345DB00844AB3 /* main.m */,
