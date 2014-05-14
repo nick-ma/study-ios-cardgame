@@ -9,10 +9,31 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
-
+@property (weak, nonatomic) IBOutlet UILabel *flipLable;
+@property (nonatomic) int flipCount;
 @end
 
 @implementation CardGameViewController
+- (void) setFlipCount:(int)flipCount{
+    _flipCount = flipCount;
+    
+    NSLog(@"flip counts: %d", self.flipCount);
+}
+- (IBAction)touchCardButton:(UIButton *)sender {
+//    UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+    if ([sender.currentTitle length] ) {
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardback"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }else{
+        [sender setBackgroundImage:[UIImage imageNamed:@"cardfront"]
+                          forState:UIControlStateNormal];
+        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+        
+    }
+    self.flipCount++;
+    self.flipLable.text =[NSString stringWithFormat:@"次数: %d", self.flipCount] ;
+}
 
 - (void)viewDidLoad
 {
